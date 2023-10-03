@@ -11,7 +11,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect('mongodb+srv://michalipka1:<password>@cluster0.oyprett.mongodb.net/?retryWrites=true&w=majority', 
+mongoose.connect('mongodb+srv://michalipka1:W1Y5B6PvP8gRHSOe@cluster0.oyprett.mongodb.net/?retryWrites=true&w=majority', 
 {
   useNewUrlParser: true, 
   useUnifiedTopology: true
