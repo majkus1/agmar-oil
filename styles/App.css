@@ -1,0 +1,1714 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Rajdhani:wght@400;500;600&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Fjalla One", sans-serif;
+  font-family: "Rajdhani", sans-serif;
+  background-color: #222831;
+}
+
+@media (max-width: 860px) {
+  .onlyforseo {
+    font-family: "Fjalla One", sans-serif;
+    font-family: "Rajdhani", sans-serif;
+  }
+}
+@media (max-width: 576px) {
+  header .smallphotoseo {
+    display: block;
+    margin-top: 90px;
+  }
+  header .smallphotoseo img {
+    height: 270px;
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  header .smallphotoseo {
+    display: block;
+    margin-top: 90px;
+  }
+  header .smallphotoseo img {
+    height: 380px;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 859px) {
+  header .smallphotoseo {
+    display: block;
+    margin-top: 90px;
+  }
+  header .smallphotoseo img {
+    height: 420px;
+    width: 100%;
+  }
+}
+.smallphotoseo {
+  display: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1300px;
+  width: 100%;
+}
+
+.section {
+  height: 100%;
+  width: 100%;
+  transition: 1s;
+}
+
+.line {
+  background-color: #7bc74d;
+  margin-left: 10px;
+  height: 2px;
+  width: 120px;
+}
+
+.line-left {
+  bottom: 0;
+  left: -50px;
+  transform: skew(45deg);
+}
+
+.shortline {
+  margin-top: 3px;
+  background-color: #7bc74d;
+  margin-left: 10px;
+  height: 2px;
+  width: 80px;
+}
+
+.shortline-left {
+  bottom: 0;
+  left: -50px;
+  transform: skew(45deg);
+}
+
+h3 {
+  padding-top: 90px;
+  color: white;
+  margin-left: 10px;
+  font-size: 38px;
+}
+
+header {
+  height: 95vh;
+}
+
+header .navdesktop-list {
+  display: none;
+}
+
+header .hero-text {
+  display: none;
+}
+
+header .hero-img {
+  display: none;
+}
+
+header .hero-imgmedium {
+  display: none;
+}
+
+header .telcontact {
+  display: flex;
+  justify-content: start;
+}
+
+header .telcontact a {
+  position: fixed;
+  left: 15px;
+  bottom: 25px;
+  z-index: 9999999999999999000000000000000000000000000;
+}
+
+header .telcontact a img {
+  width: 55px;
+  height: 55px;
+}
+
+header .mobilenav {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  background: none;
+  width: 100%;
+  box-shadow: 0px 0px 35px black;
+  border: none;
+  z-index: 1;
+  height: 90px;
+  width: 100%;
+}
+
+header .mobilenav .nav-item {
+  display: flex;
+  align-items: center;
+}
+
+header .mobilenav .nav-item a {
+  display: flex;
+}
+
+header .mobilenav div {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+}
+
+header .mobilenav .logo {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-position: center;
+}
+
+header .mobilenav p {
+  display: flex;
+  font-family: "Fjalla One", sans-serif;
+  color: #31c41a;
+  font-size: 5.8vh;
+  font-weight: 700;
+  align-items: center;
+}
+
+header .mobilenav .toggle {
+  margin-right: 15px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+header .mobilenav .menu {
+  position: fixed;
+  top: 0;
+  width: 65%;
+  right: -100%;
+  height: 100%;
+  z-index: 100;
+  transition: 0.3s;
+  padding: 4rem 0 0 3rem;
+  background: white;
+}
+
+header .mobilenav .close {
+  font-size: 2rem;
+  color: black;
+  position: absolute;
+  top: 2rem;
+  right: 1.25rem;
+  cursor: pointer;
+}
+
+header .mobilenav .list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  row-gap: 2.5rem;
+}
+
+header .mobilenav .list .item .line {
+  height: 50px;
+  width: 62%;
+  background-color: #7bc74d;
+}
+
+header .mobilenav .list .item .line-left {
+  bottom: 0;
+  left: -50px;
+  transform: skew(45deg);
+}
+
+header .mobilenav .list .item .line {
+  margin-left: 0;
+  height: 2px;
+  width: 100px;
+  margin-bottom: 0;
+}
+
+header .mobilenav a {
+  color: #222831;
+  font-weight: 600;
+  transition: 0.3s;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+header .mobilenav a:hover {
+  color: green;
+}
+
+header .mobilenav .show-menu {
+  right: 0;
+}
+
+header .hero-imgmobile {
+  position: relative;
+  height: 95vh;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  z-index: 0;
+}
+
+header .hero-textmobile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 20px;
+  color: white;
+  font-size: 18px;
+}
+
+header .hero-textmobile h1 {
+  width: 60%;
+}
+
+header .hero-textmobile p {
+  display: block;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.801);
+  width: 60%;
+}
+
+header .hero-textmobile .buttonsoflinksmobile {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  margin-left: -20px;
+}
+
+header .hero-textmobile .buttonsoflinksmobile a {
+  margin-left: 17px;
+  padding: 11px;
+  border: 1px solid #31c41a;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+header .hero-shadow {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 95vh;
+  background-color: rgba(34, 40, 49, 0.6);
+}
+
+header .hero-shadowsik {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 95vh;
+  background-color: rgba(34, 40, 49, 0.6);
+}
+
+header .buttondelivery {
+  display: none;
+}
+
+header .white-block {
+  position: absolute;
+  height: 110px;
+  width: 62%;
+  background-color: #222831;
+}
+
+header .white-block-left {
+  bottom: 0;
+  left: -50px;
+  transform: skew(45deg);
+}
+
+header .white-block-right {
+  top: 0;
+  right: -50px;
+  transform: skew(45deg);
+}
+
+header .white-block {
+  height: 70px;
+  width: 45%;
+}
+
+header .pricebox {
+  display: flex;
+  position: fixed;
+  right: 7px;
+  bottom: 25px;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  z-index: 1000000000000;
+  border-radius: 12px;
+  font-size: 12px;
+  height: 35px;
+  width: 200px;
+  box-shadow: none;
+  z-index: 0;
+}
+
+header .pricebox .date {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+header .pricebox .imgprice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 35px;
+  width: 60px;
+}
+
+header .pricebox .imgprice p {
+  color: white;
+  font-weight: 600;
+  font-size: 23px;
+}
+
+header .pricebox .onprice {
+  padding-left: 7px;
+  padding-right: 7px;
+  font-weight: 600;
+}
+
+header .priceboxsik {
+  display: flex;
+  position: fixed;
+  right: 7px;
+  bottom: 25px;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  z-index: 1000000000000;
+  border-radius: 12px;
+  font-size: 12px;
+  height: 35px;
+  width: 200px;
+  box-shadow: none;
+  z-index: 0;
+}
+
+header .priceboxsik .date {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+header .priceboxsik .imgprice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 35px;
+  width: 60px;
+}
+
+header .priceboxsik .imgprice p {
+  color: white;
+  font-weight: 600;
+  font-size: 23px;
+}
+
+header .priceboxsik .onprice {
+  padding-left: 7px;
+  padding-right: 7px;
+  font-weight: 600;
+}
+
+header .telnexttoprice {
+  display: none;
+}
+
+.aboutcompany {
+  margin-top: 50px;
+}
+
+.aboutcompany .imgaboutdesktop {
+  display: none;
+}
+
+.aboutcompany .abouttext h2 {
+  font-size: 26px;
+  text-align: center;
+  margin-top: 10px;
+  color: #7bc74d;
+}
+
+.aboutcompany .abouttext p {
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 5px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.aboutcompany .abouttext .imgabout {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.aboutcompany .abouttext .imgabout img {
+  height: 120px;
+  width: 100%;
+}
+
+.aboutcompany .abouttext .imgabout .shadowimgcompany {
+  display: inline-block;
+  left: 0;
+  position: absolute;
+  height: 130px;
+  width: 100%;
+  background-color: rgba(34, 40, 49, 0.3333333333);
+  box-shadow: 0px 0px 35px black;
+}
+
+.aboutcompany .abouticon {
+  margin-top: 25px;
+  padding-bottom: 25px;
+  background-color: #393e46;
+  color: white;
+  font-size: 16px;
+}
+
+.aboutcompany .abouticon p {
+  padding-top: 5px;
+}
+
+.aboutcompany .abouticon .iconsone {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-weight: 600;
+  padding-top: 25px;
+}
+
+.aboutcompany .abouticon .iconsone .years {
+  width: 50%;
+}
+
+.aboutcompany .abouticon .iconsone .clients {
+  width: 50%;
+}
+
+.aboutcompany .abouticon .iconstwo {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-weight: 600;
+  padding-top: 32px;
+}
+
+.aboutcompany .abouticon .iconstwo .fasttransport {
+  width: 50%;
+}
+
+.aboutcompany .abouticon .iconstwo .contacts {
+  width: 50%;
+}
+
+.aboutcompany .bgcflotamobile {
+  display: flex;
+  justify-content: center;
+  margin-top: 27px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.aboutcompany .bgcflotamobile .imgcarsmobile {
+  width: 100%;
+  height: 120px;
+}
+
+.aboutcompany .imgcarsdesktop {
+  display: none;
+}
+
+.aboutcompany .abouticondesktop {
+  display: none;
+}
+
+.offer {
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.offer .bgcoildesktop {
+  display: none;
+}
+
+.offer .offertextmobile {
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 5px;
+  color: white;
+  font-size: 21px;
+  z-index: 100;
+}
+
+.offer .offertextmobile h1 {
+  font-size: 26px;
+  margin-bottom: 5px;
+  color: #7bc74d;
+}
+
+.offer .offertextmobile h2 {
+  font-size: 26px;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.offer img {
+  position: absolute;
+  width: 100%;
+  height: 1100px;
+  opacity: 0.07;
+}
+
+.offer .offertextdesktop {
+  display: none;
+}
+
+.delivery .priceoil {
+  display: flex;
+  align-items: center;
+  color: black;
+  margin-left: 7px;
+  background-color: #7bc74d;
+  font-weight: 600;
+  height: 40px;
+  width: 250px;
+  border-radius: 2%;
+  border: none;
+  box-shadow: 0px 0px 35px rgb(0, 0, 0);
+}
+
+.delivery .priceoil div {
+  padding-right: 10px;
+  padding-left: 3px;
+}
+
+.delivery .priceoil .imgpriceoil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 40px;
+  width: 60px;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.delivery .priceoil .imgpriceoil p {
+  color: white;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.delivery .flexdelivery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delivery .flexdelivery .bgccardeli {
+  display: none;
+}
+
+.delivery .flexdelivery form {
+  margin-top: 25px;
+}
+
+.delivery .flexdelivery form input {
+  width: 50vw;
+  margin-bottom: 18px;
+  margin-left: 10px;
+  height: 30px;
+  color: white;
+  box-shadow: 0px 0px 35px rgb(0, 0, 0);
+  padding-left: 5px;
+  background-color: #393e46;
+  border: none;
+  font-size: 14px;
+}
+
+.delivery .flexdelivery form select {
+  margin-bottom: 18px;
+  margin-left: 10px;
+  background-color: #7bc74d;
+  border: black;
+  color: black;
+  font-size: 14px;
+  height: 25px;
+}
+
+.delivery .flexdelivery form button {
+  margin-left: 20vw;
+  padding: 10px;
+  background-color: #7bc74d;
+  border: #7bc74d;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  box-shadow: 0px 0px 35px rgb(0, 0, 0);
+}
+
+.delivery .flexdelivery form button:hover {
+  background-color: white;
+}
+
+.delivery .flexdelivery form .form-control {
+  color: white;
+  z-index: 1000000000000000000000000000000000000000000000000000000;
+}
+
+.delivery .flexdelivery .bgcoildeli {
+  width: 35vw;
+  height: 35vh;
+  padding-top: 65px;
+  padding-right: 10px;
+}
+
+.delivery .films {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.delivery .films iframe {
+  box-shadow: 0px 0px 35px black;
+}
+
+.delivery .films p {
+  margin-top: 35px;
+  color: white;
+  font-size: 19px;
+}
+
+.contact {
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contact .contactus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 45px;
+}
+
+.contact .contactus p {
+  color: white;
+  font-size: 21px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.contact .contactus p img {
+  width: 30px;
+  height: 30px;
+  margin-left: 13px;
+  margin-right: 7px;
+}
+
+.contact .contactus p .flotacontact {
+  display: none;
+}
+
+.contact .contactus .contactfoto {
+  margin-top: 20px;
+  width: 100%;
+  height: 130px;
+  box-shadow: 0px 0px 35px black;
+}
+
+.contact .contactus .contactfotoshadow {
+  margin-top: -130px;
+  width: 100%;
+  height: 130px;
+  background-color: rgba(34, 40, 49, 0.4705882353);
+  box-shadow: 0px 0px 35px black;
+}
+
+.contact .contactus form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  background-color: #393e46;
+  width: 100%;
+}
+
+.contact .contactus form p {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 25px;
+  font-weight: 500;
+  margin-top: 0;
+  color: #7bc74d;
+  padding-bottom: 7px;
+}
+
+.contact .contactus form label {
+  color: white;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.contact .contactus form textarea {
+  height: 130px;
+  width: 250px;
+  background-color: #222831;
+  border: none;
+  color: white;
+  font-size: 17px;
+  padding-left: 6px;
+  padding-top: 2px;
+}
+
+.contact .contactus form input {
+  margin-bottom: 12px;
+  height: 22px;
+  background-color: #222831;
+  border: none;
+  color: white;
+  font-size: 15px;
+  padding-left: 6px;
+}
+
+.contact .contactus form button {
+  margin-top: 15px;
+  padding: 15px;
+  cursor: pointer;
+  background-color: #7bc74d;
+  border: none;
+  color: #222831;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.contact .contactus form button:hover {
+  background-color: white;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  background-color: #393e46;
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+footer p {
+  padding-left: 90px;
+  padding-bottom: 15px;
+  font-size: 16px;
+}
+
+@media (max-width: 295px) {
+  header .pricebox {
+    width: 180px;
+  }
+  header .priceboxsik {
+    width: 180px;
+  }
+}
+@media (min-width: 610px) and (max-width: 800px) {
+  .aboutcompany .bgcflotamobile .imgcarsmobile {
+    height: 155px;
+  }
+}
+@media (min-width: 800px) and (max-width: 1280px) {
+  .aboutcompany .bgcflotamobile {
+    display: flex;
+    justify-content: center;
+  }
+  .aboutcompany .bgcflotamobile .imgcarsmobile {
+    width: 80%;
+    height: 230px;
+  }
+}
+@media (max-width: 1280px) {
+  .aboutcompany .infoaboutcompany .abouttext {
+    padding: 10px;
+  }
+}
+@media (min-width: 650px) {
+  .aboutcompany .abouttext .imgabout img {
+    height: 250px;
+  }
+  .aboutcompany .abouttext .imgabout .shadowimgcompany {
+    height: 250px;
+  }
+}
+@media (min-width: 510px) and (max-width: 860px) {
+  header .hero-imgmobile {
+    display: none;
+  }
+  header .hero-textmobile {
+    font-size: 23px;
+  }
+  header .hero-textmobile h1 {
+    width: 100%;
+  }
+  header .hero-textmobile p {
+    font-size: 16px;
+    width: 100%;
+  }
+  header .hero-imgmedium {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+  }
+  .contact .contactus .contactfoto {
+    height: 200px;
+  }
+  .contact .contactus .contactfotoshadow {
+    margin-top: -200px;
+    height: 200px;
+  }
+}
+@media (min-width: 860px) {
+  header {
+    height: 100vh;
+  }
+  header .hero-imgmobile {
+    display: none;
+  }
+  header .hero-textmobile {
+    display: none;
+  }
+  header .hero-imgmedium {
+    display: none;
+  }
+  header .hero-img {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+  header .hero-shadow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34, 40, 49, 0.7058823529);
+  }
+  header .hero-shadowsik {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34, 40, 49, 0.7490196078);
+  }
+  header .hero-shadowsik .offextxt {
+    margin-top: 160px;
+    max-width: 850px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  header .hero-shadowsik .offextxt h1 {
+    margin-bottom: 17px;
+    font-weight: bold;
+    color: #31c41a;
+  }
+  header .hero-shadowsik .offextxt p {
+    margin-bottom: 12px;
+    font-size: 17px;
+    color: white;
+  }
+  header .hero-text {
+    display: block;
+    margin-top: -100px;
+    color: white;
+    font-size: 27px;
+  }
+  header .hero-text p {
+    text-align: center;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.801);
+  }
+  header .hero-text .buttonslinks {
+    display: flex;
+    justify-content: center;
+    font-size: 21px;
+  }
+  header .hero-text .buttonslinks .btns {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    margin: 15px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  header .hero-text .buttonslinks .btns::after,
+  header .hero-text .buttonslinks .btns::before {
+    border: 2px solid #31c41a;
+    content: "";
+    position: absolute;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: transform 0.3s ease;
+  }
+  header .hero-text .buttonslinks .btns:hover::after {
+    transform: translate(-5px, -5px);
+  }
+  header .hero-text .buttonslinks .btns:hover::before {
+    transform: translate(5px, 5px);
+  }
+  header .pricebox {
+    display: flex;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    left: 0;
+    bottom: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 0;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    font-size: 14px;
+    height: 40px;
+    width: 240px;
+    z-index: 0;
+  }
+  header .pricebox .date {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  header .pricebox .imgprice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 40px;
+    width: 60px;
+  }
+  header .pricebox .imgprice p {
+    color: white;
+    font-weight: 600;
+    font-size: 26px;
+  }
+  header .pricebox .onprice {
+    padding-left: 7px;
+    padding-right: 7px;
+    font-weight: 600;
+  }
+  header .priceboxsik {
+    display: flex;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    left: 0;
+    bottom: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 0;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    font-size: 14px;
+    height: 40px;
+    width: 240px;
+    z-index: 0;
+  }
+  header .priceboxsik .date {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  header .priceboxsik .imgprice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 40px;
+    width: 60px;
+  }
+  header .priceboxsik .imgprice p {
+    color: white;
+    font-weight: 600;
+    font-size: 26px;
+  }
+  header .priceboxsik .onprice {
+    padding-left: 7px;
+    padding-right: 7px;
+    font-weight: 600;
+  }
+  header .telcontact {
+    display: none;
+  }
+  header .telnexttoprice {
+    display: block;
+    position: absolute;
+    left: 250px;
+    bottom: 25px;
+    color: white;
+  }
+  .contact .contactus .contactfoto {
+    height: 270px;
+  }
+  .contact .contactus .contactfotoshadow {
+    margin-top: -270px;
+    height: 270px;
+  }
+}
+@media (min-width: 960px) {
+  header .mobilenav {
+    display: none;
+  }
+  header .navdesktop-list {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    background: none;
+    width: 100%;
+    box-shadow: 0px 0px 15px black;
+    border: none;
+    padding: 1rem 0;
+    z-index: 1000000000000000000;
+  }
+  header .navdesktop-list .nav-item a {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+  }
+  header .navdesktop-list .nav-item a .logo {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    z-index: 100000000000000000000000000000000000000000000000000000;
+  }
+  header .navdesktop-list .nav-item a p {
+    font-family: "Fjalla One", sans-serif;
+    color: #31c41a;
+    font-size: 45.5px;
+    font-weight: 700;
+    align-items: center;
+    opacity: 1;
+  }
+}
+@media (min-width: 1160px) {
+  .aboutcompany .abouticon {
+    display: none;
+  }
+  .aboutcompany .abouticondesktop {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #393e46;
+    color: white;
+    font-size: 21px;
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .aboutcompany .abouticondesktop p {
+    padding-top: 10px;
+  }
+}
+@media (min-width: 1280px) {
+  .aboutcompany .infoaboutcompany {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .aboutcompany .infoaboutcompany .abouttext h2 {
+    font-size: 26px;
+  }
+  .aboutcompany .infoaboutcompany .abouttext p {
+    font-size: 23px;
+  }
+  .aboutcompany .infoaboutcompany .imgabout {
+    display: none;
+  }
+  .aboutcompany .infoaboutcompany .imgaboutdesktop {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: center;
+    border-radius: 10%;
+  }
+  .aboutcompany .imgcarsmobile {
+    display: none;
+  }
+  .aboutcompany .bgcflota {
+    display: flex;
+    justify-content: center;
+  }
+  .aboutcompany .bgcflota .imgcarsdesktop {
+    display: flex;
+    margin-top: 20px;
+    width: 70%;
+    height: 275px;
+  }
+  .offer {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .offer .line {
+    margin-left: 55px;
+  }
+  .offer .shortline {
+    margin-left: 55px;
+  }
+  .offer .white-block {
+    margin-left: 50px;
+  }
+  .offer h3 {
+    margin-left: 50px;
+  }
+  .offer .offertextmobile {
+    display: none;
+  }
+  .offer .bgcoildesktop {
+    display: block;
+    height: 1240px;
+    width: 1100px;
+    z-index: -1;
+  }
+  .offer .offertextdesktop {
+    display: block;
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    z-index: 100;
+  }
+  .offer .offertextdesktop h1 {
+    color: #7bc74d;
+    font-size: 30px;
+    margin-bottom: 2px;
+  }
+  .offer .offertextdesktop h2 {
+    margin-top: 20px;
+    font-size: 30px;
+    color: white;
+  }
+  .offer .offertextdesktop p {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 27px;
+  }
+  .delivery {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .delivery .priceoil {
+    margin-left: 50px;
+  }
+  .delivery h3 {
+    margin-top: 90px;
+    margin-left: 50px;
+  }
+  .delivery .line {
+    margin-left: 55px;
+  }
+  .delivery .flexdelivery form {
+    margin-top: 40px;
+    margin-left: 50px;
+  }
+  .delivery .flexdelivery form input {
+    width: 614px;
+    font-size: 17px;
+    height: 34px;
+  }
+  .delivery .flexdelivery form select {
+    height: 25px;
+  }
+  .delivery .flexdelivery form button {
+    margin-left: 261px;
+    font-size: 17px;
+  }
+  .delivery .flexdelivery .bgcoildeli {
+    display: none;
+  }
+  .delivery .flexdelivery .bgccardeli {
+    display: block;
+    margin-right: 80px;
+    margin-bottom: 50px;
+    width: 495px;
+  }
+  .delivery .films {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .delivery .films p {
+    margin-bottom: 8px;
+    font-size: 23px;
+  }
+  .contact {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .contact .contactus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .contact .contactus p {
+    font-size: 27px;
+  }
+  .contact .contactus p .flotacontact {
+    display: block;
+    margin-top: 20px;
+    width: 230px;
+    height: 200px;
+  }
+  .contact .contactus .contactfoto {
+    display: none;
+  }
+  .contact .contactus .contactfotoshadow {
+    display: none;
+  }
+  .contact .contactus form {
+    margin-right: 30px;
+    width: 500px;
+  }
+  .contact .contactus form h3 {
+    margin-bottom: 20px;
+  }
+  .contact .contactus form input {
+    height: 30px;
+  }
+  .contact .contactus form textarea {
+    height: 180px;
+    width: 350px;
+  }
+  footer p {
+    padding-left: 200px;
+  }
+}
+#headernav {
+  height: 0;
+}
+
+#headernav .navdesktop-list {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.992);
+  width: 100%;
+  box-shadow: 0px 0px 15px black;
+  border: none;
+  padding: 1rem 0;
+  z-index: 1000000000000000000;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+#headernav .navdesktop-list .nav-item a {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+
+#headernav .navdesktop-list .nav-item a .logo {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-position: center;
+  z-index: 100000000000000000000000000000000000000000000000000000;
+}
+
+#headernav .navdesktop-list .nav-item a p {
+  font-family: "Fjalla One", sans-serif;
+  color: #31c41a;
+  font-size: 45.5px;
+  font-weight: 700;
+  align-items: center;
+  opacity: 1;
+}
+
+#headernav .navdesktop-list a {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  list-style: none;
+  margin-right: 3.4vw;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 19px;
+  color: rgb(0, 0, 0);
+}
+
+#headernav .navdesktop-list .active {
+  color: #31c41a;
+}
+
+#headernav .navdesktop-list .nav-item a {
+  display: flex;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 2.8vh;
+}
+
+#headernav .navdesktop-list .nav-item:first-child {
+  margin-right: auto;
+  margin-left: 1rem;
+}
+
+#headernav .navdesktop-list a:hover {
+  opacity: 0.7;
+}
+
+#headernav .mobilenav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  top: 0;
+  width: 100%;
+  box-shadow: 0px 0px 35px black;
+  border: none;
+  z-index: 1;
+  height: 90px;
+  width: 100%;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+#headernav .mobilenav .nav-item {
+  display: flex;
+  align-items: center;
+}
+
+#headernav .mobilenav div {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+}
+
+#headernav .mobilenav .logo {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-position: center;
+}
+
+#headernav .mobilenav p {
+  display: flex;
+  font-family: "Fjalla One", sans-serif;
+  color: #31c41a;
+  font-size: 5.8vh;
+  font-weight: 700;
+  align-items: center;
+}
+
+#headernav .mobilenav .toggle {
+  margin-right: 15px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+#headernav .mobilenav .menu {
+  position: fixed;
+  top: 0;
+  width: 65%;
+  right: -100%;
+  height: 100%;
+  z-index: 100;
+  transition: 0.3s;
+  padding: 4rem 0 0 3rem;
+  background: white;
+}
+
+#headernav .mobilenav .close {
+  display: none;
+  font-size: 2rem;
+  color: black;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.25rem;
+  cursor: pointer;
+  color: white;
+}
+
+#headernav .mobilenav .list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  row-gap: 2.5rem;
+}
+
+#headernav .mobilenav .list .item .line {
+  height: 50px;
+  width: 62%;
+  background-color: #7bc74d;
+}
+
+#headernav .mobilenav .list .item .line-left {
+  bottom: 0;
+  left: -50px;
+  transform: skew(45deg);
+}
+
+#headernav .mobilenav .list .item .line {
+  margin-left: 0;
+  height: 2px;
+  width: 100px;
+  margin-bottom: 0;
+}
+
+#headernav .mobilenav a {
+  color: #222831;
+  font-weight: 600;
+  transition: 0.3s;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#headernav .mobilenav a:hover {
+  color: green;
+}
+
+#headernav .mobilenav .show-menu {
+  right: 0;
+}
+
+#headernav .mobilenav .nav__links {
+  display: block;
+  perspective: none;
+  height: 100vh;
+  width: 50vw;
+  background-color: #222831;
+  position: absolute;
+  top: 90px;
+  right: -50vw;
+  transition: 1s;
+}
+
+#headernav .mobilenav .nav__links ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 25px;
+}
+
+#headernav .mobilenav .nav__links ul li {
+  margin-top: 25px;
+  list-style: none;
+  padding: 25px;
+  border-left: 1px solid greenyellow;
+  box-shadow: 0 0 35px black;
+}
+
+#headernav .mobilenav .nav__links ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 859px) {
+  #headernav .navdesktop-list {
+    display: none;
+  }
+  header .hero-shadowsik .offextxt {
+    margin-top: 20px;
+  }
+  header .hero-shadowsik .offextxt h1 {
+    color: #31c41a;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 17px;
+  }
+  header .hero-shadowsik .offextxt p {
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 13px;
+    font-size: 17px;
+  }
+}
+@media (min-width: 860px) {
+  #headernav .mobilenav {
+    display: none;
+  }
+}
+@keyframes animationss {
+  0% {
+    right: -50vw;
+  }
+  100% {
+    right: 0;
+  }
+}
+.menu-button {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 80000;
+  width: 100px;
+  height: 90px;
+  background-color: #222831;
+}
+
+#headernav .mobilenav .menu-button .burger {
+  font-size: 35px;
+  color: white;
+}
+
+.sidebar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  background: #f8f9fa;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+.sidebar .first {
+  margin-top: 130px;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.sidebar a {
+  display: block;
+  padding: 1rem;
+  color: #212529;
+  text-decoration: none;
+}
+
+#headernav .mobilenav .sidebar .nav-mob {
+  font-size: 27px;
+}
+
+#headernav .mobilenav .sidebar .active {
+  color: green;
+}
+
+.contact .contactus .contactform span {
+  color: red;
+  padding: 10px;
+}
+
+.status-message {
+  color: rgb(71, 252, 0);
+}
+
+.services-description {
+  color: white;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 140px;
+  padding: 15px;
+  margin-bottom: 60px;
+}
+.services-description h1 {
+  margin-bottom: 10px;
+  color: rgb(13, 205, 13);
+  font-size: 30px;
+}
+.services-description .short-news {
+  font-size: 17px;
+  box-shadow: 0px 0px 35px black;
+  padding: 20px;
+}
+.services-description .short-news p {
+  margin-bottom: 15px;
+}
+
+.otherlinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.otherlinks a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.099);
+}
+
+.login-to-panel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-to-panel h1 {
+  font-size: 55px;
+  color: #31c41a;
+  margin-bottom: 40px;
+}
+.login-to-panel input {
+  margin-bottom: 20px;
+  padding: 7px;
+  font-size: 15px;
+}
+.login-to-panel button {
+  padding: 7px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.login-to-panel a {
+  margin-top: 60px;
+  text-decoration: underline;
+  color: gray;
+}/*# sourceMappingURL=App.css.map */

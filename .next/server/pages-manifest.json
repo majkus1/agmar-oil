@@ -1,0 +1,17 @@
+{
+  "/api/send": "pages/api/send.js",
+  "/_app": "pages/_app.js",
+  "/": "pages/index.html",
+  "/kontakt": "pages/kontakt.html",
+  "/login": "pages/login.html",
+  "/o-firmie": "pages/o-firmie.html",
+  "/oferta": "pages/oferta.html",
+  "/paliwa-krakow-b7-b0": "pages/paliwa-krakow-b7-b0.html",
+  "/paliwa-katowice-b7-b0": "pages/paliwa-katowice-b7-b0.html",
+  "/paliwa-ogrodzieniec-b7-b0": "pages/paliwa-ogrodzieniec-b7-b0.html",
+  "/paliwa-zawiercie-b7-b0": "pages/paliwa-zawiercie-b7-b0.html",
+  "/update-price": "pages/update-price.html",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}
